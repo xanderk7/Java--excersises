@@ -1,0 +1,26 @@
+package org.example;
+
+import java.util.Scanner;
+public class Oefening1 {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int[] getallen = new int[6];
+        int i, gemiddelde;
+        for (i=0;i<6;i++){
+            System.out.println("Geef een willekeurig getal in: ");
+            getallen[i] = sc.nextInt();
+        }
+
+        int som = 0;
+        for(int getal : getallen){
+            som += getal;
+        }
+
+        gemiddelde = som/ getallen.length;
+        System.out.printf("De som van de getallen is:%d%n ", som);
+        System.out.printf("Het gemiddelde is:%d%n " ,gemiddelde);
+
+
+    }
+}
