@@ -1,0 +1,14 @@
+package org.example;
+
+public class Oefening1 {
+    public static void main(String[] args)
+    {
+        int[] verzameling = {1,2,3,4,5};
+        System.out.printf("De getallen in de verzameling zijn: ");
+        for (int getal : verzameling ){
+            System.out.printf(" "+ getal);
+        }
+
+
+    }
+}
