@@ -1,0 +1,27 @@
+package org.example;
+
+import java.util.Scanner;
+public class Oefening1 {
+    public static void main(String[] args) {
+
+
+        Scanner invoer = new Scanner(System.in);
+        int[] temperaturen = new int[7];
+        int temp;
+
+        for (temp = 0; temp < 7; temp++) {
+            System.out.println("Geef de temperatuur van de dag in: ");
+            temperaturen[temp] = invoer.nextInt();
+        }
+        int som = 0;
+        for (int t : temperaturen){
+            som+=t;
+        }
+        int gemiddelde = som/ temperaturen.length;
+        System.out.printf("De som van alle temperaturen is: %d%n",som);
+        System.out.printf("De gemiddelde temperatuur is: %d%n", gemiddelde);
+
+
+
+    }
+}
