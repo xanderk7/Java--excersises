@@ -1,0 +1,15 @@
+package Oefening_array;
+
+public class Oefening2 {
+    public static void main(String[] args) {
+        double[] getallen = {10.80,56.12,14};
+        int som = 0;
+        for(double getal : getallen){
+            som += getal;
+
+        }
+        double gemiddelde = som/ getallen.length;
+        System.out.printf("Het gemiddelde van de getallen is: "+gemiddelde);
+
+    }
+}
