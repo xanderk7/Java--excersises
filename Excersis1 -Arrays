@@ -1,0 +1,15 @@
+package Oefening_array;
+
+public class Oefening1 {
+    public static void main(String[] args) {
+        {
+            int[] getallen = {1, 2, 3, 4, 5};
+            int som = 0;
+            for (int getal : getallen) {
+                som += getal;
+
+            }
+            System.out.printf("De som van getallen is "+ som);
+
+        }
+    }}
