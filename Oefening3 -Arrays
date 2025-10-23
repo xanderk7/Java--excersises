@@ -1,0 +1,11 @@
+package Oefening_array;
+
+public class Oefening3 {
+    public static void main(String[] args) {
+        String[] namen = {"anna", "pieter", "jan"};
+        for (String naam : namen){
+            System.out.println(naam.toUpperCase());
+        }
+
+    }
+}
