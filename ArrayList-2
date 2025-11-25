@@ -1,0 +1,26 @@
+package cui;
+
+import java.util.List;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Oefening1 {
+    public static void main(String[] args) {
+        List<String> dieren = new ArrayList<>(
+                List.of("Koala", "Panda", "Giraf", "Tijger")
+        );
+        Scanner invoer = new Scanner(System.in);
+
+        for(int i = 1;i<4;i++){
+            System.out.println("Geef een willekeurig dier in: ");
+            String dier = invoer.nextLine();
+            if (dieren.contains(dier)){
+                System.out.println("Het ingevoerde dier zit in de lijst ");
+            }else{
+                System.out.println("Het ingevoerde dier zit niet in de lijst");
+            }
+
+        }
+
+    }
+}
