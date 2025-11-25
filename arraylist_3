@@ -1,0 +1,22 @@
+package cui;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Oefening1 {
+    public static void main(String[] args) {
+        List<String> namen = new ArrayList<>(
+                List.of("Xander", "Alice", "Bob", "Carl")
+        );
+        System.out.printf("de lijst voor het omkeren: " + namen);
+        Collections.reverse(namen);
+        System.out.printf("de lijst na het omkeren: " + namen);
+
+
+
+
+
+    }
+}
