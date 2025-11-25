@@ -1,0 +1,22 @@
+package cui;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Oefening1 {
+    public static void main(String[] args) {
+        List<String> namen = new ArrayList<>(
+                List.of("Container", "koek", "Platteland", "Pap")
+        );
+
+        String langste = "";
+
+        for (String naam : namen) {
+            if (naam.length() > langste.length()) {
+                langste = naam;  // correct: langste wordt het huidige naam
+            }
+        }
+
+        System.out.println("Het langste woord in de lijst is: " + langste);
+    }
+}
