@@ -1,0 +1,25 @@
+package cui;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Oefening1 {
+    public static void main(String[] args) {
+        ArrayList<Integer> getallen = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+
+        for(int i = 1;i<10;i++){
+            System.out.println("geef een willekeurig getallen in: ");
+            int getal = input.nextInt();
+            if ( getal%2 == 0) {
+                getallen.add(getal);
+            }
+
+            System.out.printf("Je hebt " + i + " getallen ingevoerd Dit zijn alle even ingevoerde getallen: " + getallen );
+
+        }
+
+
+
+    }
+}
