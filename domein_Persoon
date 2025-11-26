@@ -1,0 +1,51 @@
+package domein;
+
+public class Persoon {
+
+	private String naam;
+	private int leeftijd;
+
+	public Persoon() {
+        this.naam = "onbekend";
+        this.leeftijd = 0;
+
+	}
+
+	/**
+	 * 
+	 * @param naam
+	 * @param leeftijd
+	 */
+	public Persoon(String naam, int leeftijd) {
+        this.naam = naam;
+        this.setLeeftijd(leeftijd);
+
+	}
+
+	public boolean isVolwassne() {
+		if(leeftijd >= 18){
+            return true;
+        }else{
+            return false;
+        }
+	}
+
+    public String getNaam() {
+        return naam;
+    }
+
+    public int getLeeftijd() {
+        return leeftijd;
+    }
+
+    public void setNaam(String naam) {
+        this.naam = naam;
+    }
+
+    public void setLeeftijd(int leeftijd) {
+        if (leeftijd < 0){
+            throw new IllegalArgumentException("Je leeftijd kan niet negatief zijn! ");
+        }this.leeftijd = leeftijd;
+
+    }
+}
