@@ -1,0 +1,26 @@
+package cui;
+
+import domein.Persoon;
+import java.util.Scanner;
+
+
+public class PersoonApplicatie {
+    public static void main(String[] args) {
+        Scanner invoer = new Scanner(System.in);
+
+        System.out.println("Geef je naam in: ");
+        String naam = invoer.nextLine();
+
+        System.out.println("Geef je leeftijd in: ");
+        int leeftijd = invoer.nextInt();
+
+
+        Persoon persoon = new Persoon(naam, leeftijd);
+
+        System.out.printf("Naam: " + persoon.getNaam());
+        System.out.printf("Leeftijd: " + persoon.getLeeftijd());
+
+
+    }
+
+}
