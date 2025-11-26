@@ -1,0 +1,27 @@
+package cui;
+
+import domein.Hond;
+import java.util.Scanner;
+
+public class HondApplicatie {
+    public static void main(String[] args) {
+        Scanner invoer = new Scanner(System.in);
+
+        System.out.println("Geef de naam in: ");
+        String naam = invoer.nextLine();
+
+        System.out.println("Geef de leeftijd in: ");
+        int leeftijd = invoer.nextInt();
+        invoer.nextLine();
+
+        System.out.println("Geef het ras in: ");
+        String ras = invoer.nextLine();
+
+        Hond hond = new Hond(naam, leeftijd, ras);
+
+        System.out.printf("De naam van de hond is: " + hond.getNaam());
+        System.out.printf("de leeftijd van de hond is: " + hond.getLeeftijd());
+        System.out.printf("Het ras van de hond is: " + hond.getRas());
+
+    }
+}
