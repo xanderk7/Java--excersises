@@ -1,0 +1,30 @@
+package cui;
+
+import domein.Boek;
+import java.util.Scanner;
+
+public class BoekApplicatie {
+    public static void main(String[] args) {
+        Scanner invoer = new Scanner(System.in);
+
+        System.out.println("Geef de titel in: ");
+        String titel = invoer.nextLine();
+        System.out.println("Geef de auteur in: ");
+        String auteur = invoer.nextLine();
+        System.out.println("Geef het aantal paginas in: ");
+        int aantalPaginas = invoer.nextInt();
+        invoer.nextLine();
+        System.out.println("Heb je het boek gelezen?");
+        String antwoord = invoer.nextLine();
+        boolean gelezen = antwoord.equalsIgnoreCase("ja");
+
+        Boek boek = new  Boek(titel, auteur, aantalPaginas, gelezen);
+
+        System.out.printf("De titel van het boek is: " + boek.getTitel());
+        System.out.printf("De auteur van het boek is: " + boek.getAuteur());
+        System.out.printf("Het boek heeft" + boek.getAantalPaginas() + "paginas");
+        System.out.printf("Is het boek gelezen?" + boek.isGelezen());
+        System.out.println("Is het een lang boek?" + boek.isLangBoek());
+
+    }
+}
