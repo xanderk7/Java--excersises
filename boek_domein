@@ -1,0 +1,66 @@
+package domein;
+
+public class Boek {
+
+	private String titel;
+	private String auteur;
+	private int aantalPaginas;
+	private boolean gelezen;
+
+	public Boek() {
+		this.titel = "Onbekend";
+        this.auteur = "Onbekend";
+        this.aantalPaginas = 0;
+        this.gelezen = false;
+	}
+
+
+	public Boek(String titel, String auteur, int aantalPaginas, boolean gelezen) {
+		this.setTitel(titel);
+        this.setAuteur(auteur);
+        this.setAantalPaginas(aantalPaginas);
+        this.setGelezen(gelezen);
+
+	}
+
+	public boolean isLangBoek() {
+		if ( aantalPaginas > 300){
+            return true;
+        }else{
+            return false;
+        }
+	}
+
+    public String getTitel() {
+        return titel;
+    }
+
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public int getAantalPaginas() {
+        return aantalPaginas;
+    }
+
+    public boolean isGelezen() {
+        return gelezen;
+
+    }
+
+    public void setTitel(String titel) {
+        this.titel = titel;
+    }
+
+    public void setAuteur(String auteur) {
+        this.auteur = auteur;
+    }
+
+    public void setAantalPaginas(int aantalPaginas) {
+        this.aantalPaginas = aantalPaginas;
+    }
+
+    public void setGelezen(boolean gelezen) {
+        this.gelezen = gelezen;
+    }
+}
