@@ -1,0 +1,65 @@
+package domein;
+
+public class Auto {
+
+	private String merk;
+	private int bouwjaar;
+	private int kilometerstand;
+
+	public Auto() {
+		this.merk = "onbekend";
+        this.bouwjaar = 1886;
+        this.kilometerstand = 0;
+	}
+
+	/**
+	 * 
+
+	 */
+	public Auto(String merk, int bouwjaar, int km) {
+		this.setMerk(merk);
+        this.setBouwjaar(bouwjaar);
+        this.setKilometerstand(km);
+
+	}
+
+	public boolean isOldTimer() {
+		if (bouwjaar < 1990){
+            return true;
+        }else{
+            return false;
+        }
+	}
+
+    public String getMerk() {
+        return merk;
+    }
+
+    public int getBouwjaar() {
+        return bouwjaar;
+    }
+
+    public int getKilometerstand() {
+        return kilometerstand;
+    }
+
+    public void setMerk(String merk) {
+        this.merk = merk;
+    }
+
+    public void setBouwjaar(int bouwjaar) {
+        if (bouwjaar < 1886){
+            throw new IllegalArgumentException("Bouwjaar is niet geldig ");
+        }
+        this.bouwjaar = bouwjaar;
+    }
+
+    public void setKilometerstand(int kilometerstand) {
+        if (kilometerstand < 0){
+            throw new IllegalArgumentException("Kilometerstand mag niet negatief zijn ");
+        }else{
+            this.kilometerstand = kilometerstand;
+        }
+
+    }
+}
