@@ -1,0 +1,32 @@
+package cui2;
+
+import java.util.Scanner;
+
+public class Oefening2 {
+    public static void main(String[] args) {
+        Scanner invoer = new Scanner(System.in);
+        System.out.println("geef je bewerking in");
+        String bewerking1 = invoer.nextLine();
+        System.out.println("Geef je eerste getal in: ");
+        int getal1 = invoer.nextInt();
+        System.out.println("Geef je tweede getal in: ");
+        int getal2 = invoer.nextInt();
+        System.out.println("Geef je bewerking in: ");
+
+
+        switch(bewerking1){
+            case "+":
+                int eindbewerking = getal1 + getal2;
+                System.out.println(eindbewerking);
+                break;
+            case "-":
+                int eindbewerking2 = getal1 - getal2;
+                System.out.println(eindbewerking2);
+                break;
+        }
+
+
+
+
+    }
+}
