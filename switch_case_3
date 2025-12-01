@@ -1,0 +1,32 @@
+package cui2;
+
+import java.util.Scanner;
+
+
+public class Oefening3 {
+    public static void main(String[] args) {
+        Scanner invoer = new Scanner(System.in);
+
+        System.out.println("Geef je score in: ");
+        int score = invoer.nextInt();
+
+        switch (score){
+            case 1:
+                System.out.println("Dit is een lage score...");
+                break;
+            case 2:
+                System.out.println("Dit is net niet erdoor.");
+                break;
+            case 3:
+                System.out.println("Dit is een matige score...");
+                break;
+            case 4:
+                System.out.println("Dit is een goede score!");
+                break;
+            case 5:
+                System.out.println("Dit is een zeer goede score!!");
+                break;
+        }
+
+    }
+}
