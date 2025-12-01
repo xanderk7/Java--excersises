@@ -1,0 +1,52 @@
+package cui2;
+
+import java.util.Scanner;
+
+public class Oefening1 {
+    static void main(String[] args) {
+        Scanner invoer = new Scanner(System.in);
+
+        System.out.println("Geef een willekeurig getal in: ");
+        int getal = invoer.nextInt();
+
+        switch (getal){
+            case 1:
+                System.out.println("je koos voor januari");
+                break;
+            case 2:
+                System.out.println("je koos voor februari");
+                break;
+            case 3:
+                System.out.println("je koos voor maart");
+                break;
+            case 4:
+                System.out.println("je koos voor april");
+                break;
+            case 5:
+                System.out.println("je koos voor mei");
+                break;
+            case 6:
+                System.out.println("je koos voor juni");
+                break;
+            case 7:
+                System.out.println("je koos voor juli");
+                break;
+            case 8:
+                System.out.println("je koos voor augustus");
+                break;
+            case 9:
+                System.out.println("je koos voor september");
+                break;
+            case 10:
+                System.out.println("je koos voor oktober");
+                break;
+            case 11:
+                System.out.println("je koos voor november");
+                break;
+            case 12:
+                System.out.println("je koos voor december");
+                break;
+        }
+
+    }
+}
