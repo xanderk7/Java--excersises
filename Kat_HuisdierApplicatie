@@ -1,0 +1,18 @@
+package cui;
+
+public class Kat extends Huisdier {
+
+        public Kat(String naam) {
+            super(naam);
+        }
+
+        @Override
+        public String maakGeluid() {
+            return "Miauw!";
+        }
+
+        // NIEUWE methode (alleen voor katten)
+        public String spin() {
+            return getNaam() + " spint";
+        }
+    }
