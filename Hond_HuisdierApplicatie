@@ -1,0 +1,19 @@
+ package cui;
+
+// SUBKLASSE (kind)
+    public class Hond extends Huisdier {
+
+        public Hond(String naam) {
+            super(naam); // Roep de constructor van Huisdier aan
+        }
+
+        @Override // We geven een NIEUWE betekenis aan maakGeluid
+        public String maakGeluid() {
+            return "Waf waf!";
+        }
+
+        // NIEUWE methode (alleen voor honden)
+        public String kwispel() {
+            return "Kwispel kwispel!";
+        }
+    }
