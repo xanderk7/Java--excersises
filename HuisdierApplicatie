@@ -1,0 +1,14 @@
+package cui;
+
+public class HuisdierApplicatie {
+        public static void main(String[] args) {
+            Hond rex = new Hond("Rex");
+            Kat minoes = new Kat("Minoes");
+
+            System.out.println(rex.getNaam() + " zegt: " + rex.maakGeluid());
+            System.out.println(rex.kwispel());
+
+            System.out.println(minoes.getNaam() + " zegt: " + minoes.maakGeluid());
+            System.out.println(minoes.spin());
+        }
+    }
