@@ -1,0 +1,11 @@
+package cui7;
+
+public class Kat extends Dier{
+    public Kat(String naam) {
+        super(naam);
+    }
+
+    public void speciaal(){
+        System.out.println("spinn...");
+    }
+}
