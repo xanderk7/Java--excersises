@@ -1,0 +1,27 @@
+package cui7;
+
+public class Dier {
+    private String naam;
+    private Dier[] dieren;
+
+    public Dier(String naam){
+        this.naam = naam;
+        dieren = new Dier[]{
+                new Kat("Minoes")
+        };
+    }
+
+    public String iets(){
+        return "!";
+    }
+
+    public void speciaal(){
+        for (Dier dier : dieren){
+            if (dier instanceof Kat){
+                ((Kat) dier).speciaal();
+            }else{
+                System.out.println("dit is geen kat");
+            }
+        }
+    }
+}
